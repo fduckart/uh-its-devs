@@ -9,13 +9,16 @@
             <h1>Dev Playground</h1>
             <p class="lead" th:text="#{home.intro}"></p>
             <div id="app">
-                {{ message }}
+                {{ message }} <br/>
+            </div>
+            <div id="app-util">
+                {{ message }} <br/>
             </div>
         </div>
     </div>
     <!-- / Content container. -->
 
-    <div th:include="scripts :: copy"></div>
+    <div th:replace="scripts :: copy"></div>
 
 </body>
 </html>

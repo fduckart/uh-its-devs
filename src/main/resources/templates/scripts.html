@@ -1,10 +1,4 @@
-<div th:fragment="copy">
-    <script type="text/javascript">
-    var app = new Vue({
-        el: '#app',
-        data: {
-            message: 'Hello Vue!'
-        }
-    });
-    </script>
+<div th:fragment="copy" th:remove="tag">
+    <script type="text/javascript" th:src="@{/javascript/devs.js}"></script>
+    <script type="text/javascript" th:src="@{/javascript/devs-util.js}"></script>
 </div>
