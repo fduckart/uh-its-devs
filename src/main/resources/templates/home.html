@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:replace="header-items :: copy"></head>
+<body>
+
+    <!--  Content container -->
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Dev Playground</h1>
+            <p class="lead" th:text="#{home.intro}"></p>
+            <div id="app">
+                {{ message }}
+            </div>
+        </div>
+    </div>
+    <!-- / Content container. -->
+
+    <div th:include="scripts :: copy"></div>
+
+</body>
+</html>
